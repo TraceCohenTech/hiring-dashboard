@@ -1,0 +1,93 @@
+import { useState, useMemo } from 'react';
+import { companies, sectors } from './data/companies';
+import { headlines } from './data/headlines';
+import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcGrowthTimeline } from './utils/calculations';
+import type { FilterState } from './types';
+import Header from './components/Header';
+import HeadlinesTicker from './components/HeadlinesTicker';
+import KPICards from './components/KPICards';
+import FilterBar from './components/FilterBar';
+import GrowthTimeline from './components/GrowthTimeline';
+import AIBoomInsights from './components/AIBoomInsights';
+import SectorChart from './components/SectorChart';
+import TopGrowers from './components/TopGrowers';
+import GrowthVsLayoffs from './components/GrowthVsLayoffs';
+
+export default function App() {
+  const [filters, setFilters] = useState<FilterState>({ search: '', sector: '' });
+
+  const filtered = useMemo(() => {
+    return companies.filter(c => {
+      const matchSearch = !filters.search ||
+        c.company.toLowerCase().includes(filters.search.toLowerCase()) ||
+        c.sector.toLowerCase().includes(filters.search.toLowerCase());
+      const matchSector = !filters.sector || c.sector === filters.sector;
+      return matchSearch && matchSector;
+    });
+  }, [filters]);
+
+  const kpis = useMemo(() => calcKPIs(filtered), [filtered]);
+  const sectorData = useMemo(() => calcSectorData(filtered), [filtered]);
+  const topGrowers = useMemo(() => calcTopGrowers(filtered, 20), [filtered]);
+  const aiBoom = useMemo(() => calcAIBoom(companies), []);
+  const timeline = useMemo(() => calcGrowthTimeline(filtered), [filtered]);
+  const allKpis = useMemo(() => calcKPIs(companies), []);
+
+  return (
+    <div className="min-h-screen bg-[#f5f5f7]">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-6">
+        {/* Hero */}
+        <Header
+          totalJobsAdded={allKpis.totalJobsAdded}
+          companiesCount={companies.length}
+          sectorsCount={sectors.length}
+        />
+
+        {/* Ticker */}
+        <HeadlinesTicker headlines={headlines} />
+
+        {/* KPIs */}
+        <KPICards
+          totalJobsAdded={kpis.totalJobsAdded}
+          companiesGrowing={kpis.companiesGrowing}
+          avgGrowthRate={kpis.avgGrowthRate}
+          aiDrivenCount={kpis.aiDrivenCount}
+          fastestGrower={kpis.fastestGrower}
+          largestAdder={kpis.largestAdder}
+        />
+
+        {/* Filters */}
+        <FilterBar
+          filters={filters}
+          onFilterChange={setFilters}
+          sectors={sectors}
+        />
+
+        {/* Growth Timeline */}
+        <GrowthTimeline data={timeline} />
+
+        {/* AI Boom */}
+        <AIBoomInsights data={aiBoom} />
+
+        {/* Sector Chart */}
+        <SectorChart data={sectorData} />
+
+        {/* Top Growers */}
+        <TopGrowers data={topGrowers} />
+
+        {/* Growth vs Layoffs */}
+        <GrowthVsLayoffs />
+
+        {/* Footer */}
+        <footer className="text-center py-8 border-t border-slate-200">
+          <p className="text-sm text-slate-400">
+            Built by <span className="font-medium text-slate-600">Trace Cohen</span>
+          </p>
+          <p className="text-xs text-slate-300 mt-1">
+            Data sourced from public reports, SEC filings, and verified news
+          </p>
+        </footer>
+      </div>
+    </div>
+  );
+}
