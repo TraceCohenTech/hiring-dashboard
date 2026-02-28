@@ -1,7 +1,9 @@
 import { useState, useMemo } from 'react';
 import { companies, sectors } from './data/companies';
 import { headlines } from './data/headlines';
-import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcGrowthTimeline } from './utils/calculations';
+import { financialsData } from './data/financials';
+import { historicalHeadcountData } from './data/historicalHeadcount';
+import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcGrowthTimeline, calcRevenuePerEmployee, calcEfficiencyMetrics } from './utils/calculations';
 import type { FilterState } from './types';
 import Header from './components/Header';
 import HeadlinesTicker from './components/HeadlinesTicker';
@@ -9,9 +11,15 @@ import KPICards from './components/KPICards';
 import FilterBar from './components/FilterBar';
 import GrowthTimeline from './components/GrowthTimeline';
 import AIBoomInsights from './components/AIBoomInsights';
+import RevenuePerEmployee from './components/RevenuePerEmployee';
+import EfficiencyMetrics from './components/EfficiencyMetrics';
 import SectorChart from './components/SectorChart';
+import HistoricalHeadcount from './components/HistoricalHeadcount';
 import TopGrowers from './components/TopGrowers';
 import GrowthVsLayoffs from './components/GrowthVsLayoffs';
+
+// Pre-compute financial metrics (static data)
+const revenueRanked = calcRevenuePerEmployee(financialsData, 20);
 
 export default function App() {
   const [filters, setFilters] = useState<FilterState>({ search: '', sector: '' });
@@ -32,6 +40,7 @@ export default function App() {
   const aiBoom = useMemo(() => calcAIBoom(companies), []);
   const timeline = useMemo(() => calcGrowthTimeline(filtered), [filtered]);
   const allKpis = useMemo(() => calcKPIs(companies), []);
+  const efficiencyMetrics = useMemo(() => calcEfficiencyMetrics(financialsData, filtered), [filtered]);
 
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
@@ -69,11 +78,18 @@ export default function App() {
         {/* AI Boom */}
         <AIBoomInsights data={aiBoom} />
 
-        {/* Sector Chart */}
-        <SectorChart data={sectorData} />
+        {/* Revenue Efficiency — NEW */}
+        <RevenuePerEmployee data={revenueRanked} />
+        <EfficiencyMetrics data={efficiencyMetrics} />
 
-        {/* Top Growers */}
-        <TopGrowers data={topGrowers} />
+        {/* Sector Chart — ENHANCED with drill-down */}
+        <SectorChart data={sectorData} companies={filtered} />
+
+        {/* Historical Headcount — NEW */}
+        <HistoricalHeadcount data={historicalHeadcountData} />
+
+        {/* Top Growers — ENHANCED with expandable rows */}
+        <TopGrowers data={topGrowers} financials={financialsData} histories={historicalHeadcountData} />
 
         {/* Growth vs Layoffs */}
         <GrowthVsLayoffs />

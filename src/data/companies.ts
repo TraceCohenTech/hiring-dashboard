@@ -16,7 +16,7 @@ export const companies: HiringEntry[] = [
   { company: 'Figure AI', sector: 'AI-Native', previousCount: 80, currentCount: 850, netAdded: 770, growthPercent: 963, aiRelated: true, description: 'Humanoid robotics powered by AI' },
 
   // Big Tech Net-Positive
-  { company: 'NVIDIA', sector: 'Big Tech', previousCount: 29600, currentCount: 36000, netAdded: 6400, growthPercent: 22, aiRelated: true, description: 'GPU giant generating $4.1M revenue per employee' },
+  { company: 'NVIDIA', sector: 'Big Tech', previousCount: 29600, currentCount: 42000, netAdded: 12400, growthPercent: 42, aiRelated: true, description: 'GPU giant generating $3.1M revenue per employee' },
   { company: 'Meta', sector: 'Big Tech', previousCount: 74000, currentCount: 78800, netAdded: 4800, growthPercent: 6, aiRelated: true, description: 'Net-positive despite 2023 layoff headlines' },
   { company: 'Alphabet', sector: 'Big Tech', previousCount: 183000, currentCount: 190000, netAdded: 7000, growthPercent: 4, aiRelated: true, description: 'Google parent company still growing headcount' },
   { company: 'Amazon', sector: 'Big Tech', previousCount: 1550000, currentCount: 1570000, netAdded: 20000, growthPercent: 1, aiRelated: true, description: 'World\'s largest tech employer continues adding' },

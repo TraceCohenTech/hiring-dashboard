@@ -1,4 +1,4 @@
-import type { HiringEntry, SectorData, GrowthTimelinePoint } from '../types';
+import type { HiringEntry, SectorData, GrowthTimelinePoint, CompanyFinancials, EfficiencyMetric } from '../types';
 import { sectorColors } from './chartTheme';
 
 export function calcKPIs(data: HiringEntry[]) {
@@ -93,4 +93,44 @@ export function formatNumber(num: number): string {
   if (num >= 1000000) return `${(num / 1000000).toFixed(1)}M`;
   if (num >= 1000) return `${(num / 1000).toFixed(num >= 10000 ? 0 : 1)}K`;
   return num.toLocaleString();
+}
+
+/** Sort companies by revenue per employee, descending */
+export function calcRevenuePerEmployee(financials: CompanyFinancials[], limit = 15): CompanyFinancials[] {
+  return [...financials]
+    .sort((a, b) => b.revenuePerEmployee - a.revenuePerEmployee)
+    .slice(0, limit);
+}
+
+/** Join financials + hiring data to compute efficiency metrics */
+export function calcEfficiencyMetrics(financials: CompanyFinancials[], hiringData: HiringEntry[]): EfficiencyMetric[] {
+  const hiringMap = new Map<string, HiringEntry>();
+  for (const h of hiringData) {
+    hiringMap.set(h.company, h);
+  }
+
+  return financials.map(f => {
+    const hiring = hiringMap.get(f.company);
+    const netAdded = hiring?.netAdded ?? 0;
+    const jobsPerBillionRevenue = f.revenueMillions > 0
+      ? Math.round((f.employeeCount / (f.revenueMillions / 1000)))
+      : 0;
+
+    return {
+      company: f.company,
+      sector: f.sector,
+      revenuePerEmployee: f.revenuePerEmployee,
+      jobsPerBillionRevenue,
+      netAdded,
+      revenueMillions: f.revenueMillions,
+      employeeCount: f.employeeCount,
+    };
+  });
+}
+
+/** Format currency values: $3.11M, $406K */
+export function formatCurrency(value: number): string {
+  if (value >= 1_000_000) return `$${(value / 1_000_000).toFixed(2)}M`;
+  if (value >= 1_000) return `$${Math.round(value / 1_000)}K`;
+  return `$${value.toLocaleString()}`;
 }
