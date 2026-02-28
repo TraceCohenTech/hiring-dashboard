@@ -1,6 +1,6 @@
 import type { CompanyHistory } from '../types';
 
-// Multi-year headcount data for ~15 companies
+// Multi-year headcount data for key companies
 // Sources: MacroTrends, Bullfincher, SEC filings, public reports
 
 export const historicalHeadcountData: CompanyHistory[] = [
@@ -207,6 +207,65 @@ export const historicalHeadcountData: CompanyHistory[] = [
       { year: 2023, count: 7200, yoyChangePercent: -10 },
       { year: 2024, count: 8000, yoyChangePercent: 11.1 },
       { year: 2025, count: 10000, yoyChangePercent: 25 },
+    ],
+  },
+  {
+    company: 'Wiz',
+    sector: 'Cybersecurity',
+    headcount: [
+      { year: 2021, count: 200 },
+      { year: 2022, count: 500, yoyChangePercent: 150 },
+      { year: 2023, count: 900, yoyChangePercent: 80 },
+      { year: 2024, count: 1800, yoyChangePercent: 100 },
+      { year: 2025, count: 3100, yoyChangePercent: 72.2 },
+    ],
+  },
+  {
+    company: 'Scale AI',
+    sector: 'AI-Native',
+    headcount: [
+      { year: 2020, count: 300 },
+      { year: 2021, count: 600, yoyChangePercent: 100 },
+      { year: 2022, count: 1000, yoyChangePercent: 66.7 },
+      { year: 2023, count: 1500, yoyChangePercent: 50 },
+      { year: 2024, count: 2500, yoyChangePercent: 66.7 },
+      { year: 2025, count: 4000, yoyChangePercent: 60 },
+    ],
+  },
+  {
+    company: 'Waymo',
+    sector: 'Robotics',
+    headcount: [
+      { year: 2020, count: 1000 },
+      { year: 2021, count: 1200, yoyChangePercent: 20 },
+      { year: 2022, count: 1200, yoyChangePercent: 0 },
+      { year: 2023, count: 1200, yoyChangePercent: 0 },
+      { year: 2024, count: 1800, yoyChangePercent: 50 },
+      { year: 2025, count: 2500, yoyChangePercent: 38.9 },
+    ],
+  },
+  {
+    company: 'Micron',
+    sector: 'Semiconductors',
+    headcount: [
+      { year: 2019, count: 34000 },
+      { year: 2020, count: 40000, yoyChangePercent: 17.6 },
+      { year: 2021, count: 43000, yoyChangePercent: 7.5 },
+      { year: 2022, count: 48000, yoyChangePercent: 11.6 },
+      { year: 2023, count: 43000, yoyChangePercent: -10.4 },
+      { year: 2024, count: 48000, yoyChangePercent: 11.6 },
+      { year: 2025, count: 53000, yoyChangePercent: 10.4 },
+    ],
+  },
+  {
+    company: 'Rippling',
+    sector: 'SaaS/Enterprise',
+    headcount: [
+      { year: 2021, count: 800 },
+      { year: 2022, count: 1500, yoyChangePercent: 87.5 },
+      { year: 2023, count: 2800, yoyChangePercent: 86.7 },
+      { year: 2024, count: 4200, yoyChangePercent: 50 },
+      { year: 2025, count: 6772, yoyChangePercent: 61.2 },
     ],
   },
 ];

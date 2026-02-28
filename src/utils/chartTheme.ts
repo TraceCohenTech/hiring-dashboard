@@ -32,6 +32,10 @@ export const sectorColors: Record<string, string> = {
   'Semiconductors': colors.semis,
   'Infrastructure': colors.infra,
   'SaaS/Enterprise': colors.saas,
+  'Fintech': '#059669',         // emerald-600
+  'Robotics': '#9333ea',        // purple-600
+  'Energy': '#16a34a',          // green-600
+  'Consulting': '#0d9488',      // teal-600
   'Other': colors.other,
 };
 
