@@ -97,10 +97,15 @@ export default function App() {
         {/* Footer */}
         <footer className="text-center py-8 border-t border-slate-200">
           <p className="text-sm text-slate-400">
-            Built by <span className="font-medium text-slate-600">Trace Cohen</span>
+            Built by <a href="https://x.com/Trace_Cohen" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-600 hover:text-slate-900 transition-colors">Trace Cohen</a>
           </p>
           <p className="text-xs text-slate-300 mt-1">
             Data sourced from public reports, SEC filings, and verified news
+          </p>
+          <p className="text-xs text-slate-300 mt-2">
+            <a href="https://x.com/Trace_Cohen" target="_blank" rel="noopener noreferrer" className="hover:text-slate-500 transition-colors">@Trace_Cohen</a>
+            <span className="mx-2">·</span>
+            <a href="mailto:t@nyvp.com" className="hover:text-slate-500 transition-colors">t@nyvp.com</a>
           </p>
         </footer>
       </div>
