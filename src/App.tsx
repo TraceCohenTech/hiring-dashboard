@@ -3,13 +3,12 @@ import { companies, sectors } from './data/companies';
 import { headlines } from './data/headlines';
 import { financialsData } from './data/financials';
 import { historicalHeadcountData } from './data/historicalHeadcount';
-import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcGrowthTimeline, calcRevenuePerEmployee, calcEfficiencyMetrics } from './utils/calculations';
+import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcRevenuePerEmployee, calcEfficiencyMetrics } from './utils/calculations';
 import type { FilterState } from './types';
 import Header from './components/Header';
 import HeadlinesTicker from './components/HeadlinesTicker';
 import KPICards from './components/KPICards';
 import FilterBar from './components/FilterBar';
-import GrowthTimeline from './components/GrowthTimeline';
 import AIBoomInsights from './components/AIBoomInsights';
 import RevenuePerEmployee from './components/RevenuePerEmployee';
 import EfficiencyMetrics from './components/EfficiencyMetrics';
@@ -38,7 +37,6 @@ export default function App() {
   const sectorData = useMemo(() => calcSectorData(filtered), [filtered]);
   const topGrowers = useMemo(() => calcTopGrowers(filtered, 20), [filtered]);
   const aiBoom = useMemo(() => calcAIBoom(companies), []);
-  const timeline = useMemo(() => calcGrowthTimeline(filtered), [filtered]);
   const allKpis = useMemo(() => calcKPIs(companies), []);
   const efficiencyMetrics = useMemo(() => calcEfficiencyMetrics(financialsData, filtered), [filtered]);
 
@@ -72,21 +70,18 @@ export default function App() {
           sectors={sectors}
         />
 
-        {/* Growth Timeline */}
-        <GrowthTimeline data={timeline} />
+        {/* Historical Headcount — moved up, best chart */}
+        <HistoricalHeadcount data={historicalHeadcountData} />
 
         {/* AI Boom */}
         <AIBoomInsights data={aiBoom} />
 
-        {/* Revenue Efficiency — NEW */}
+        {/* Revenue Efficiency */}
         <RevenuePerEmployee data={revenueRanked} />
         <EfficiencyMetrics data={efficiencyMetrics} />
 
         {/* Sector Chart — ENHANCED with drill-down */}
         <SectorChart data={sectorData} companies={filtered} />
-
-        {/* Historical Headcount — NEW */}
-        <HistoricalHeadcount data={historicalHeadcountData} />
 
         {/* Top Growers — ENHANCED with expandable rows */}
         <TopGrowers data={topGrowers} financials={financialsData} histories={historicalHeadcountData} />
