@@ -82,11 +82,15 @@ export default function App() {
         {/* AI Boom — startup growth multiples */}
         <AIBoomInsights data={aiBoom} />
 
-        {/* AI Penetration by Sector — stacked adoption bars */}
-        <AIAdoptionChart data={filtered} />
+        {/* Top Growers — expandable rows */}
+        <TopGrowers data={topGrowers} financials={financialsData} histories={historicalHeadcountData} />
 
         {/* Revenue Efficiency */}
         <RevenuePerEmployee data={revenueRanked} />
+
+        {/* AI Penetration by Sector — stacked adoption bars */}
+        <AIAdoptionChart data={filtered} />
+
         <EfficiencyMetrics data={efficiencyMetrics} />
 
         {/* The Power Law — hiring concentration curve */}
@@ -94,9 +98,6 @@ export default function App() {
 
         {/* Sector Chart — with drill-down */}
         <SectorChart data={sectorData} companies={filtered} />
-
-        {/* Top Growers — expandable rows */}
-        <TopGrowers data={topGrowers} financials={financialsData} histories={historicalHeadcountData} />
 
         {/* Growth vs Layoffs — recovery narrative */}
         <GrowthVsLayoffs />
