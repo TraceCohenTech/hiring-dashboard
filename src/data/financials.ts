@@ -87,7 +87,6 @@ export const financialsData: CompanyFinancials[] = [
   { company: 'NextEra Energy', sector: 'Energy', revenueMillions: 24500, employeeCount: 16500, revenuePerEmployee: 1484848 },
 
   // Other
-  { company: 'BYD', sector: 'Other', revenueMillions: 107000, employeeCount: 700000, revenuePerEmployee: 152857 },
   { company: 'Costco', sector: 'Other', revenueMillions: 254200, employeeCount: 341000, revenuePerEmployee: 745161 },
   { company: 'Chipotle', sector: 'Other', revenueMillions: 11300, employeeCount: 120000, revenuePerEmployee: 94167 },
   { company: 'Carvana', sector: 'Other', revenueMillions: 15300, employeeCount: 8500, revenuePerEmployee: 1800000 },

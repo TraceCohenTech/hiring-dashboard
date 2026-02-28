@@ -182,7 +182,6 @@ export const companies: HiringEntry[] = [
   // ============================================================
   // Other Notable (10 companies)
   // ============================================================
-  { company: 'BYD', sector: 'Other', previousCount: 570000, currentCount: 700000, netAdded: 130000, growthPercent: 23, aiRelated: false, description: 'Chinese EV giant surpassed Tesla in sales; 700K employees worldwide' },
   { company: 'Costco', sector: 'Other', previousCount: 316000, currentCount: 341000, netAdded: 25000, growthPercent: 8, aiRelated: false, description: 'No-layoffs culture with industry-leading 8% turnover' },
   { company: 'Chipotle', sector: 'Other', previousCount: 105000, currentCount: 120000, netAdded: 15000, growthPercent: 14, aiRelated: false, description: 'Fast-casual chain; 3,600+ locations; continuous expansion' },
   { company: 'Sprouts Farmers Market', sector: 'Other', previousCount: 31000, currentCount: 35000, netAdded: 4000, growthPercent: 13, aiRelated: false, description: 'Specialty grocery; 440+ stores; health-conscious growth' },

@@ -10,9 +10,12 @@ import HeadlinesTicker from './components/HeadlinesTicker';
 import KPICards from './components/KPICards';
 import FilterBar from './components/FilterBar';
 import AIBoomInsights from './components/AIBoomInsights';
+import HiringScatter from './components/HiringScatter';
+import AIAdoptionChart from './components/AIAdoptionChart';
 import RevenuePerEmployee from './components/RevenuePerEmployee';
 import EfficiencyMetrics from './components/EfficiencyMetrics';
 import SectorChart from './components/SectorChart';
+import HiringConcentration from './components/HiringConcentration';
 import HistoricalHeadcount from './components/HistoricalHeadcount';
 import TopGrowers from './components/TopGrowers';
 import GrowthVsLayoffs from './components/GrowthVsLayoffs';
@@ -70,23 +73,32 @@ export default function App() {
           sectors={sectors}
         />
 
-        {/* Historical Headcount — moved up, best chart */}
+        {/* Historical Headcount — multi-year trends */}
         <HistoricalHeadcount data={historicalHeadcountData} />
 
-        {/* AI Boom */}
+        {/* The Hiring Map — scatter/bubble chart */}
+        <HiringScatter data={filtered} />
+
+        {/* AI Boom — startup growth multiples */}
         <AIBoomInsights data={aiBoom} />
+
+        {/* AI Penetration by Sector — stacked adoption bars */}
+        <AIAdoptionChart data={filtered} />
 
         {/* Revenue Efficiency */}
         <RevenuePerEmployee data={revenueRanked} />
         <EfficiencyMetrics data={efficiencyMetrics} />
 
-        {/* Sector Chart — ENHANCED with drill-down */}
+        {/* The Power Law — hiring concentration curve */}
+        <HiringConcentration data={filtered} />
+
+        {/* Sector Chart — with drill-down */}
         <SectorChart data={sectorData} companies={filtered} />
 
-        {/* Top Growers — ENHANCED with expandable rows */}
+        {/* Top Growers — expandable rows */}
         <TopGrowers data={topGrowers} financials={financialsData} histories={historicalHeadcountData} />
 
-        {/* Growth vs Layoffs */}
+        {/* Growth vs Layoffs — recovery narrative */}
         <GrowthVsLayoffs />
 
         {/* Footer */}
