@@ -1,7 +1,4 @@
-const API_KEY = '97dcf41c7648ee044dc4c08ccc59396f';
-const BASE_URL = 'https://api.stlouisfed.org/fred/series/observations';
 const CACHE_KEY = 'fred_macro_data';
-const OBSERVATION_START = '2020-01-01';
 
 export interface FredDataPoint {
   date: string; // YYYY-MM
@@ -20,15 +17,7 @@ interface FredResponse {
 }
 
 async function fetchSeries(seriesId: string): Promise<Map<string, number>> {
-  const params = new URLSearchParams({
-    series_id: seriesId,
-    api_key: API_KEY,
-    file_type: 'json',
-    observation_start: OBSERVATION_START,
-    frequency: 'm',
-  });
-
-  const res = await fetch(`${BASE_URL}?${params}`);
+  const res = await fetch(`/api/fred?series_id=${encodeURIComponent(seriesId)}`);
   if (!res.ok) throw new Error(`FRED API error for ${seriesId}: ${res.status}`);
 
   const data: FredResponse = await res.json();
