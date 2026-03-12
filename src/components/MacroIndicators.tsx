@@ -195,7 +195,7 @@ export default function MacroIndicators({ data, loading, error, onRetry }: Macro
               />
               <Tooltip
                 {...chartConfig.tooltip}
-                labelFormatter={(label: string) => formatDate(label)}
+                labelFormatter={(label: any) => formatDate(String(label))}
                 formatter={((value: number, name: string) => {
                   if (name === 'jobOpenings') return [`${(value / 1000).toFixed(2)}M`, 'Job Openings'];
                   if (name === 'laborForceParticipation') return [`${value.toFixed(1)}%`, 'Labor Force Participation'];
