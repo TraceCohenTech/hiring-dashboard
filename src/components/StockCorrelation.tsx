@@ -3,7 +3,7 @@ import {
   ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ZAxis,
   Cell,
 } from 'recharts';
-import { TrendingUp, TrendingDown, BarChart3, Award, RefreshCw, ArrowUpRight, ArrowDownRight } from 'lucide-react';
+import { TrendingUp, BarChart3, Award, RefreshCw, ArrowUpRight, ArrowDownRight } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 import { chartConfig } from '../utils/chartTheme';
 import SectionHeader from './SectionHeader';
