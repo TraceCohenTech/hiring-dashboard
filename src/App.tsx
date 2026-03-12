@@ -7,6 +7,8 @@ import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcRevenuePerEmp
 import type { FilterState } from './types';
 import { fetchFredData } from './services/fred';
 import type { FredDataPoint } from './services/fred';
+import { fetchHiringStockCorrelation } from './services/finnhub';
+import type { StockCorrelationEntry } from './services/finnhub';
 import Header from './components/Header';
 import HeadlinesTicker from './components/HeadlinesTicker';
 import KPICards from './components/KPICards';
@@ -22,6 +24,7 @@ import HiringConcentration from './components/HiringConcentration';
 import HistoricalHeadcount from './components/HistoricalHeadcount';
 import TopGrowers from './components/TopGrowers';
 import GrowthVsLayoffs from './components/GrowthVsLayoffs';
+import StockCorrelation from './components/StockCorrelation';
 
 // Pre-compute financial metrics (static data)
 const revenueRanked = calcRevenuePerEmployee(financialsData, 20);
@@ -31,6 +34,9 @@ export default function App() {
   const [fredData, setFredData] = useState<FredDataPoint[]>([]);
   const [fredLoading, setFredLoading] = useState(true);
   const [fredError, setFredError] = useState(false);
+  const [stockData, setStockData] = useState<StockCorrelationEntry[]>([]);
+  const [stockLoading, setStockLoading] = useState(true);
+  const [stockError, setStockError] = useState(false);
 
   const loadFredData = useCallback(async () => {
     setFredLoading(true);
@@ -44,9 +50,28 @@ export default function App() {
     setFredLoading(false);
   }, []);
 
+  const loadStockData = useCallback(async () => {
+    setStockLoading(true);
+    setStockError(false);
+    try {
+      const data = await fetchHiringStockCorrelation(
+        companies.map(c => ({ company: c.company, netAdded: c.netAdded, growthPercent: c.growthPercent }))
+      );
+      if (data.length === 0) {
+        setStockError(true);
+      } else {
+        setStockData(data);
+      }
+    } catch {
+      setStockError(true);
+    }
+    setStockLoading(false);
+  }, []);
+
   useEffect(() => {
     loadFredData();
-  }, [loadFredData]);
+    loadStockData();
+  }, [loadFredData, loadStockData]);
 
   const filtered = useMemo(() => {
     return companies.filter(c => {
@@ -101,6 +126,14 @@ export default function App() {
           loading={fredLoading}
           error={fredError}
           onRetry={loadFredData}
+        />
+
+        {/* Hiring & Stock Performance — Finnhub correlation */}
+        <StockCorrelation
+          data={stockData}
+          loading={stockLoading}
+          error={stockError}
+          onRetry={loadStockData}
         />
 
         {/* Historical Headcount — multi-year trends */}
