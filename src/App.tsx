@@ -1,14 +1,17 @@
-import { useState, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { companies, sectors } from './data/companies';
 import { headlines } from './data/headlines';
 import { financialsData } from './data/financials';
 import { historicalHeadcountData } from './data/historicalHeadcount';
 import { calcKPIs, calcSectorData, calcTopGrowers, calcAIBoom, calcRevenuePerEmployee, calcEfficiencyMetrics } from './utils/calculations';
 import type { FilterState } from './types';
+import { fetchFredData } from './services/fred';
+import type { FredDataPoint } from './services/fred';
 import Header from './components/Header';
 import HeadlinesTicker from './components/HeadlinesTicker';
 import KPICards from './components/KPICards';
 import FilterBar from './components/FilterBar';
+import MacroIndicators from './components/MacroIndicators';
 import AIBoomInsights from './components/AIBoomInsights';
 import HiringScatter from './components/HiringScatter';
 import AIAdoptionChart from './components/AIAdoptionChart';
@@ -25,6 +28,25 @@ const revenueRanked = calcRevenuePerEmployee(financialsData, 20);
 
 export default function App() {
   const [filters, setFilters] = useState<FilterState>({ search: '', sector: '' });
+  const [fredData, setFredData] = useState<FredDataPoint[]>([]);
+  const [fredLoading, setFredLoading] = useState(true);
+  const [fredError, setFredError] = useState(false);
+
+  const loadFredData = useCallback(async () => {
+    setFredLoading(true);
+    setFredError(false);
+    const data = await fetchFredData();
+    if (data.length === 0) {
+      setFredError(true);
+    } else {
+      setFredData(data);
+    }
+    setFredLoading(false);
+  }, []);
+
+  useEffect(() => {
+    loadFredData();
+  }, [loadFredData]);
 
   const filtered = useMemo(() => {
     return companies.filter(c => {
@@ -71,6 +93,14 @@ export default function App() {
           filters={filters}
           onFilterChange={setFilters}
           sectors={sectors}
+        />
+
+        {/* Macro Context — FRED economic indicators */}
+        <MacroIndicators
+          data={fredData}
+          loading={fredLoading}
+          error={fredError}
+          onRetry={loadFredData}
         />
 
         {/* Historical Headcount — multi-year trends */}
