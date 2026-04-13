@@ -268,4 +268,18 @@ export const historicalHeadcountData: CompanyHistory[] = [
       { year: 2025, count: 6772, yoyChangePercent: 61.2 },
     ],
   },
+  {
+    company: 'Oracle',
+    sector: 'Big Tech',
+    headcount: [
+      { year: 2018, count: 138000 },
+      { year: 2019, count: 136000, yoyChangePercent: -1.4 },
+      { year: 2020, count: 135000, yoyChangePercent: -0.7 },
+      { year: 2021, count: 143000, yoyChangePercent: 5.9 },
+      { year: 2022, count: 143000, yoyChangePercent: 0 },
+      { year: 2023, count: 164000, yoyChangePercent: 14.7 },
+      { year: 2024, count: 162000, yoyChangePercent: -1.2 },
+      { year: 2025, count: 162000, yoyChangePercent: 0 },
+    ],
+  },
 ];

@@ -5,7 +5,7 @@ export const companies: HiringEntry[] = [
   // AI-Native (30 companies)
   // ============================================================
   { company: 'OpenAI', sector: 'AI-Native', previousCount: 770, currentCount: 7216, netAdded: 6446, growthPercent: 837, aiRelated: true, description: 'ChatGPT maker scaling from research lab to AI platform' },
-  { company: 'Anthropic', sector: 'AI-Native', previousCount: 192, currentCount: 4074, netAdded: 3882, growthPercent: 2022, aiRelated: true, description: 'Claude AI creator grew 21x in two years' },
+  { company: 'Anthropic', sector: 'AI-Native', previousCount: 192, currentCount: 4074, netAdded: 3882, growthPercent: 2022, aiRelated: true, description: 'Claude AI creator grew 21x; raised $30B Series G at $380B valuation' },
   { company: 'Databricks', sector: 'AI-Native', previousCount: 1300, currentCount: 10000, netAdded: 8700, growthPercent: 669, aiRelated: true, description: 'Data + AI platform unicorn scaling rapidly' },
   { company: 'Scale AI', sector: 'AI-Native', previousCount: 1500, currentCount: 4000, netAdded: 2500, growthPercent: 167, aiRelated: true, description: 'AI data labeling/RLHF platform; critical supplier to frontier AI labs' },
   { company: 'Perplexity', sector: 'AI-Native', previousCount: 50, currentCount: 1549, netAdded: 1499, growthPercent: 2998, aiRelated: true, description: 'AI search engine with explosive headcount growth' },
@@ -14,7 +14,7 @@ export const companies: HiringEntry[] = [
   { company: 'Mistral AI', sector: 'AI-Native', previousCount: 35, currentCount: 783, netAdded: 748, growthPercent: 2137, aiRelated: true, description: 'French AI lab building open-weight models' },
   { company: 'Figure AI', sector: 'AI-Native', previousCount: 80, currentCount: 850, netAdded: 770, growthPercent: 963, aiRelated: true, description: 'Humanoid robotics powered by AI' },
   { company: 'Glean', sector: 'AI-Native', previousCount: 200, currentCount: 900, netAdded: 700, growthPercent: 350, aiRelated: true, description: 'Enterprise AI search and knowledge platform' },
-  { company: 'xAI', sector: 'AI-Native', previousCount: 50, currentCount: 650, netAdded: 600, growthPercent: 1200, aiRelated: true, description: 'Elon Musk AI venture building Grok' },
+  { company: 'xAI', sector: 'AI-Native', previousCount: 50, currentCount: 650, netAdded: 600, growthPercent: 1200, aiRelated: true, description: 'Elon Musk AI venture; raised $20B Series E; building Grok models' },
   { company: 'HeyGen', sector: 'AI-Native', previousCount: 80, currentCount: 500, netAdded: 420, growthPercent: 525, aiRelated: true, description: 'AI video avatar platform; $60M ARR; viral growth' },
   { company: 'ElevenLabs', sector: 'AI-Native', previousCount: 200, currentCount: 690, netAdded: 490, growthPercent: 245, aiRelated: true, description: 'AI voice/audio synthesis; expanding into dubbing and audio AI' },
   { company: 'Abridge', sector: 'AI-Native', previousCount: 31, currentCount: 488, netAdded: 457, growthPercent: 1474, aiRelated: true, description: 'AI medical documentation transforming healthcare' },
@@ -48,7 +48,7 @@ export const companies: HiringEntry[] = [
   { company: 'DoorDash', sector: 'Big Tech', previousCount: 19300, currentCount: 23700, netAdded: 4400, growthPercent: 23, aiRelated: false, description: 'Food/grocery delivery expanding into all local commerce' },
   { company: 'Salesforce', sector: 'Big Tech', previousCount: 72682, currentCount: 76453, netAdded: 3771, growthPercent: 5, aiRelated: true, description: 'Agentforce AI platform; post-layoff recovery with AI hiring' },
   { company: 'Shopify', sector: 'Big Tech', previousCount: 8300, currentCount: 11600, netAdded: 3300, growthPercent: 40, aiRelated: true, description: 'E-commerce platform; AI-powered Sidekick; $8.9B revenue' },
-  { company: 'Oracle', sector: 'Big Tech', previousCount: 159000, currentCount: 162000, netAdded: 3000, growthPercent: 2, aiRelated: true, description: 'Massive AI infrastructure buildout; OCI growth for AI workloads' },
+  { company: 'Oracle', sector: 'Big Tech', previousCount: 162000, currentCount: 132000, netAdded: -30000, growthPercent: -18.5, aiRelated: true, description: 'Cut 20K–30K jobs (18%) to fund AI data center buildout; largest layoff in company history' },
   { company: 'Netflix', sector: 'Big Tech', previousCount: 13000, currentCount: 16000, netAdded: 3000, growthPercent: 23, aiRelated: false, description: 'Streaming giant growing through content expansion' },
   { company: 'Uber', sector: 'Big Tech', previousCount: 31000, currentCount: 34000, netAdded: 3000, growthPercent: 10, aiRelated: true, description: 'CEO: "If AI makes engineers 25% more efficient, I want to hire more"' },
   { company: 'AppLovin', sector: 'Big Tech', previousCount: 2100, currentCount: 4200, netAdded: 2100, growthPercent: 100, aiRelated: true, description: 'AI-powered mobile ads; AXON engine; $4.7B revenue; stock up 700%' },

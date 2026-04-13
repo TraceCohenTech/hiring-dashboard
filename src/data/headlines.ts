@@ -2,6 +2,7 @@ import type { Headline } from '../types';
 
 export const headlines: Headline[] = [
   // CEO Quotes
+  { text: '"We\'re operating as a much leaner organization, leveraging AI at its core." — Ryan Breslow, Bolt CEO', source: 'American Banker', type: 'quote' },
   { text: '"Talent density beats talent mass." — Dario Amodei, Anthropic', source: 'Anthropic', type: 'quote' },
   { text: '"We\'re going to be hiring thousands of people." — Palmer Luckey, Anduril', source: 'Anduril', type: 'quote' },
   { text: '"We will grow headcount with a lot more leverage." — Satya Nadella, Microsoft', source: 'Microsoft', type: 'quote' },
@@ -14,6 +15,7 @@ export const headlines: Headline[] = [
   { text: '"We\'re still expecting to increase headcount to 10,000." — Patrick Collison, Stripe', source: 'Stripe', type: 'quote' },
 
   // Stats
+  { text: '47.9% of Q1 2026 tech layoffs attributed to AI — 91,739 workers impacted year-to-date', source: "Tom's Hardware", type: 'stat' },
   { text: 'AI/ML job postings up 163% YoY in 2025', source: 'Indeed', type: 'stat' },
   { text: 'Healthcare added 693K jobs in 2025', source: 'BLS', type: 'stat' },
   { text: '$425B global VC funding in 2025 — 3rd highest year ever', source: 'Crunchbase', type: 'stat' },
@@ -24,6 +26,7 @@ export const headlines: Headline[] = [
   { text: 'Clean energy jobs grew 3x faster than the rest of the US workforce', source: 'DOE', type: 'stat' },
 
   // Headlines
+  { text: 'Oracle cuts 20K–30K jobs (18% of workforce) to fund AI data center buildout — largest layoff in company history', source: 'CNBC', type: 'headline' },
   { text: 'Anthropic grew 21x from 192 to 4,074 employees', source: 'Anthropic', type: 'headline' },
   { text: 'NVIDIA generates $4.1M revenue per employee', source: 'NVIDIA', type: 'headline' },
   { text: 'Eli Lilly invests $27B in US manufacturing, adding 3,000+ jobs', source: 'Eli Lilly', type: 'headline' },
