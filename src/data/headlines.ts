@@ -24,7 +24,7 @@ export const headlines: Headline[] = [
   { text: 'Clean energy jobs grew 3x faster than the rest of the US workforce', source: 'DOE', type: 'stat' },
 
   // Headlines
-  { text: 'Anthropic grew 21x from 192 to 4,074 employees', source: 'Anthropic', type: 'headline' },
+  { text: 'Anthropic grew to ~5,000 employees; now controls 73% of new enterprise AI spending', source: 'Ramp Data / SaaStr', type: 'headline' },
   { text: 'NVIDIA generates $4.1M revenue per employee', source: 'NVIDIA', type: 'headline' },
   { text: 'Eli Lilly invests $27B in US manufacturing, adding 3,000+ jobs', source: 'Eli Lilly', type: 'headline' },
   { text: 'Anduril doubled revenue to $1B, building 5M sqft weapons factory', source: 'Anduril', type: 'headline' },
@@ -32,4 +32,10 @@ export const headlines: Headline[] = [
   { text: 'Apple commits $500B to US investment over 4 years with 20K new jobs', source: 'Apple', type: 'headline' },
   { text: 'SoftBank pledges $100B US investment, promising 100,000 jobs', source: 'SoftBank', type: 'headline' },
   { text: 'CHIPS Act drives 500,000 jobs across 28 states', source: 'NIST', type: 'headline' },
+
+  // April 2026 additions
+  { text: '"We\'re locked in the most important technology race in history — and we intend to win." — Sam Altman, OpenAI', source: 'Fortune', type: 'quote' },
+  { text: 'OpenAI plans to nearly double headcount from ~4,500 to ~8,000 by end of 2026', source: 'Fortune / FT', type: 'headline' },
+  { text: 'Anthropic controls 73% of new enterprise AI spending in 2026, a dramatic reversal from OpenAI\'s prior lead', source: 'Ramp Data', type: 'stat' },
+  { text: '77% of HR leaders plan to increase headcount in 2026 despite rising labor costs', source: 'StrategicCHRO360', type: 'stat' },
 ];
