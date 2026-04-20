@@ -14,7 +14,7 @@ export const companies: HiringEntry[] = [
   { company: 'Mistral AI', sector: 'AI-Native', previousCount: 35, currentCount: 783, netAdded: 748, growthPercent: 2137, aiRelated: true, description: 'French AI lab building open-weight models' },
   { company: 'Figure AI', sector: 'AI-Native', previousCount: 80, currentCount: 850, netAdded: 770, growthPercent: 963, aiRelated: true, description: 'Humanoid robotics powered by AI' },
   { company: 'Glean', sector: 'AI-Native', previousCount: 200, currentCount: 900, netAdded: 700, growthPercent: 350, aiRelated: true, description: 'Enterprise AI search and knowledge platform' },
-  { company: 'xAI', sector: 'AI-Native', previousCount: 50, currentCount: 650, netAdded: 600, growthPercent: 1200, aiRelated: true, description: 'Elon Musk AI venture building Grok' },
+  { company: 'xAI', sector: 'AI-Native', previousCount: 650, currentCount: 2950, netAdded: 2300, growthPercent: 354, aiRelated: true, description: 'Elon Musk AI venture; Memphis workforce swelled to nearly 3,000 powering Colossus supercomputer (200K GPUs)' },
   { company: 'HeyGen', sector: 'AI-Native', previousCount: 80, currentCount: 500, netAdded: 420, growthPercent: 525, aiRelated: true, description: 'AI video avatar platform; $60M ARR; viral growth' },
   { company: 'ElevenLabs', sector: 'AI-Native', previousCount: 200, currentCount: 690, netAdded: 490, growthPercent: 245, aiRelated: true, description: 'AI voice/audio synthesis; expanding into dubbing and audio AI' },
   { company: 'Abridge', sector: 'AI-Native', previousCount: 31, currentCount: 488, netAdded: 457, growthPercent: 1474, aiRelated: true, description: 'AI medical documentation transforming healthcare' },
@@ -165,6 +165,7 @@ export const companies: HiringEntry[] = [
   { company: 'Boston Dynamics', sector: 'Robotics', previousCount: 1000, currentCount: 1423, netAdded: 423, growthPercent: 42, aiRelated: true, description: 'Spot, Atlas, Stretch robots; warehouse automation' },
   { company: '1X Technologies', sector: 'Robotics', previousCount: 100, currentCount: 350, netAdded: 250, growthPercent: 250, aiRelated: true, description: 'Humanoid robots for homes; NEO Beta; backed by OpenAI' },
   { company: 'IonQ', sector: 'Robotics', previousCount: 324, currentCount: 407, netAdded: 83, growthPercent: 26, aiRelated: true, description: 'Trapped-ion quantum computing; government and enterprise contracts' },
+  { company: 'Apptronik', sector: 'Robotics', previousCount: 100, currentCount: 300, netAdded: 200, growthPercent: 200, aiRelated: true, description: 'Apollo humanoid robot; raised $935M Series A at $5B valuation; plans 200+ hires in 2026; deployed with GXO, Mercedes-Benz, Google DeepMind' },
 
   // ============================================================
   // Energy / Climate (4 companies)
