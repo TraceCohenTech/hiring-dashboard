@@ -4,8 +4,8 @@ export const companies: HiringEntry[] = [
   // ============================================================
   // AI-Native (30 companies)
   // ============================================================
-  { company: 'OpenAI', sector: 'AI-Native', previousCount: 770, currentCount: 7216, netAdded: 6446, growthPercent: 837, aiRelated: true, description: 'ChatGPT maker scaling from research lab to AI platform' },
-  { company: 'Anthropic', sector: 'AI-Native', previousCount: 192, currentCount: 4074, netAdded: 3882, growthPercent: 2022, aiRelated: true, description: 'Claude AI creator grew 21x in two years' },
+  { company: 'OpenAI', sector: 'AI-Native', previousCount: 770, currentCount: 7216, netAdded: 6446, growthPercent: 837, aiRelated: true, description: 'ChatGPT maker targeting ~8,000 headcount by end of 2026; racing to match Anthropic in enterprise' },
+  { company: 'Anthropic', sector: 'AI-Native', previousCount: 4074, currentCount: 5000, netAdded: 926, growthPercent: 23, aiRelated: true, description: 'Claude AI creator reached ~5K employees; controls 73% of new enterprise AI spending in 2026' },
   { company: 'Databricks', sector: 'AI-Native', previousCount: 1300, currentCount: 10000, netAdded: 8700, growthPercent: 669, aiRelated: true, description: 'Data + AI platform unicorn scaling rapidly' },
   { company: 'Scale AI', sector: 'AI-Native', previousCount: 1500, currentCount: 4000, netAdded: 2500, growthPercent: 167, aiRelated: true, description: 'AI data labeling/RLHF platform; critical supplier to frontier AI labs' },
   { company: 'Perplexity', sector: 'AI-Native', previousCount: 50, currentCount: 1549, netAdded: 1499, growthPercent: 2998, aiRelated: true, description: 'AI search engine with explosive headcount growth' },
@@ -48,7 +48,7 @@ export const companies: HiringEntry[] = [
   { company: 'DoorDash', sector: 'Big Tech', previousCount: 19300, currentCount: 23700, netAdded: 4400, growthPercent: 23, aiRelated: false, description: 'Food/grocery delivery expanding into all local commerce' },
   { company: 'Salesforce', sector: 'Big Tech', previousCount: 72682, currentCount: 76453, netAdded: 3771, growthPercent: 5, aiRelated: true, description: 'Agentforce AI platform; post-layoff recovery with AI hiring' },
   { company: 'Shopify', sector: 'Big Tech', previousCount: 8300, currentCount: 11600, netAdded: 3300, growthPercent: 40, aiRelated: true, description: 'E-commerce platform; AI-powered Sidekick; $8.9B revenue' },
-  { company: 'Oracle', sector: 'Big Tech', previousCount: 159000, currentCount: 162000, netAdded: 3000, growthPercent: 2, aiRelated: true, description: 'Massive AI infrastructure buildout; OCI growth for AI workloads' },
+  { company: 'Oracle', sector: 'Big Tech', previousCount: 162000, currentCount: 142000, netAdded: -20000, growthPercent: -12, aiRelated: true, description: 'Cutting 20K+ jobs (biggest layoffs in company history) to fund $8–10B AI data center buildout' },
   { company: 'Netflix', sector: 'Big Tech', previousCount: 13000, currentCount: 16000, netAdded: 3000, growthPercent: 23, aiRelated: false, description: 'Streaming giant growing through content expansion' },
   { company: 'Uber', sector: 'Big Tech', previousCount: 31000, currentCount: 34000, netAdded: 3000, growthPercent: 10, aiRelated: true, description: 'CEO: "If AI makes engineers 25% more efficient, I want to hire more"' },
   { company: 'AppLovin', sector: 'Big Tech', previousCount: 2100, currentCount: 4200, netAdded: 2100, growthPercent: 100, aiRelated: true, description: 'AI-powered mobile ads; AXON engine; $4.7B revenue; stock up 700%' },
@@ -57,7 +57,7 @@ export const companies: HiringEntry[] = [
   { company: 'Roblox', sector: 'Big Tech', previousCount: 1600, currentCount: 3065, netAdded: 1465, growthPercent: 92, aiRelated: true, description: 'Gaming platform nearly doubled workforce' },
   { company: 'Instacart', sector: 'Big Tech', previousCount: 2800, currentCount: 3500, netAdded: 700, growthPercent: 25, aiRelated: true, description: 'Grocery delivery platform; AI-powered shopping; post-IPO growth' },
   { company: 'Pinterest', sector: 'Big Tech', previousCount: 3900, currentCount: 4400, netAdded: 500, growthPercent: 13, aiRelated: true, description: 'Visual discovery; AI-powered shopping; $3.6B revenue' },
-  { company: 'Snap', sector: 'Big Tech', previousCount: 5300, currentCount: 5800, netAdded: 500, growthPercent: 9, aiRelated: true, description: 'Snapchat; AR/AI features; My AI chatbot; ad recovery' },
+  { company: 'Snap', sector: 'Big Tech', previousCount: 5800, currentCount: 4800, netAdded: -1000, growthPercent: -17, aiRelated: true, description: 'Cut 1,000 jobs (16%) Apr 2026 citing AI efficiency; CEO Spiegel calls it a "crucible moment"' },
 
   // ============================================================
   // Defense Tech (12 companies)
