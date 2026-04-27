@@ -13,7 +13,11 @@ export const headlines: Headline[] = [
   { text: '"Microsoft needs humans more than ever in the AI boom." — Satya Nadella, Microsoft', source: 'Microsoft', type: 'quote' },
   { text: '"We\'re still expecting to increase headcount to 10,000." — Patrick Collison, Stripe', source: 'Stripe', type: 'quote' },
 
+  // CEO Quotes (new Apr 2026)
+  { text: '"AI is generating over 65% of our new code, allowing us to function with smaller, more focused teams." — Evan Spiegel, Snap', source: 'TechCrunch', type: 'quote' },
+
   // Stats
+  { text: '155+ tech layoff events in 2026, impacting over 100,000 workers — 864 jobs lost per day', source: 'TrueUp', type: 'stat' },
   { text: 'AI/ML job postings up 163% YoY in 2025', source: 'Indeed', type: 'stat' },
   { text: 'Healthcare added 693K jobs in 2025', source: 'BLS', type: 'stat' },
   { text: '$425B global VC funding in 2025 — 3rd highest year ever', source: 'Crunchbase', type: 'stat' },
@@ -24,6 +28,10 @@ export const headlines: Headline[] = [
   { text: 'Clean energy jobs grew 3x faster than the rest of the US workforce', source: 'DOE', type: 'stat' },
 
   // Headlines
+  { text: 'OpenAI plans to nearly double headcount to 8,000 by end of 2026 targeting enterprise growth', source: 'FT / Fortune', type: 'headline' },
+  { text: 'Meta announces 8,000 job cuts (10%) to fund $115–135B in AI capital spending for 2026', source: 'CNBC', type: 'headline' },
+  { text: 'Snap cuts 16% of workforce after AI generates 65%+ of new code, reducing need for engineers', source: 'TechCrunch', type: 'headline' },
+  { text: 'Microsoft launches first-ever voluntary retirement buyout — 7% of US workforce eligible', source: 'TechCrunch', type: 'headline' },
   { text: 'Anthropic grew 21x from 192 to 4,074 employees', source: 'Anthropic', type: 'headline' },
   { text: 'NVIDIA generates $4.1M revenue per employee', source: 'NVIDIA', type: 'headline' },
   { text: 'Eli Lilly invests $27B in US manufacturing, adding 3,000+ jobs', source: 'Eli Lilly', type: 'headline' },
