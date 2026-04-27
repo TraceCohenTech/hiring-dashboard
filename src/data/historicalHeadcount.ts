@@ -34,6 +34,7 @@ export const historicalHeadcountData: CompanyHistory[] = [
       { year: 2023, count: 67317, yoyChangePercent: -22.2 },
       { year: 2024, count: 74000, yoyChangePercent: 9.9 },
       { year: 2025, count: 78800, yoyChangePercent: 6.5 },
+      { year: 2026, count: 70800, yoyChangePercent: -10.2 },
     ],
   },
   {
