@@ -154,6 +154,7 @@ export const companies: HiringEntry[] = [
   { company: 'Ramp', sector: 'Fintech', previousCount: 730, currentCount: 1200, netAdded: 470, growthPercent: 64, aiRelated: true, description: 'AI-powered corporate cards/expense management; $13B valuation' },
   { company: 'Mercury', sector: 'Fintech', previousCount: 500, currentCount: 850, netAdded: 350, growthPercent: 70, aiRelated: true, description: 'Banking for startups; AI-powered financial tools; $500M+ deposits' },
   { company: 'Plaid', sector: 'Fintech', previousCount: 950, currentCount: 1100, netAdded: 150, growthPercent: 16, aiRelated: false, description: 'Financial data API connecting banks to fintech apps' },
+  { company: 'Adyen', sector: 'Fintech', previousCount: 4354, currentCount: 5100, netAdded: 746, growthPercent: 17, aiRelated: true, description: 'Global payments platform processing >$1T annually; 550-650 net new hires planned in 2026; US expansion with AI-powered fraud detection' },
 
   // ============================================================
   // Robotics / Autonomy (7 companies)
@@ -165,6 +166,7 @@ export const companies: HiringEntry[] = [
   { company: 'Boston Dynamics', sector: 'Robotics', previousCount: 1000, currentCount: 1423, netAdded: 423, growthPercent: 42, aiRelated: true, description: 'Spot, Atlas, Stretch robots; warehouse automation' },
   { company: '1X Technologies', sector: 'Robotics', previousCount: 100, currentCount: 350, netAdded: 250, growthPercent: 250, aiRelated: true, description: 'Humanoid robots for homes; NEO Beta; backed by OpenAI' },
   { company: 'IonQ', sector: 'Robotics', previousCount: 324, currentCount: 407, netAdded: 83, growthPercent: 26, aiRelated: true, description: 'Trapped-ion quantum computing; government and enterprise contracts' },
+  { company: 'Aurora Innovation', sector: 'Robotics', previousCount: 1800, currentCount: 2412, netAdded: 612, growthPercent: 34, aiRelated: true, description: 'Commercial driverless trucking live in Texas; 200+ autonomous trucks targeting Sun Belt routes in 2026; energy-sector freight partnerships' },
 
   // ============================================================
   // Energy / Climate (4 companies)
