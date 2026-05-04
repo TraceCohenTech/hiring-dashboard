@@ -24,7 +24,7 @@ export const headlines: Headline[] = [
   { text: 'Clean energy jobs grew 3x faster than the rest of the US workforce', source: 'DOE', type: 'stat' },
 
   // Headlines
-  { text: 'Anthropic grew 21x from 192 to 4,074 employees', source: 'Anthropic', type: 'headline' },
+  { text: 'Anthropic grew 26x from 192 to ~5,000 employees; hit $30B annualized revenue', source: 'SaaStr / Anthropic', type: 'headline' },
   { text: 'NVIDIA generates $4.1M revenue per employee', source: 'NVIDIA', type: 'headline' },
   { text: 'Eli Lilly invests $27B in US manufacturing, adding 3,000+ jobs', source: 'Eli Lilly', type: 'headline' },
   { text: 'Anduril doubled revenue to $1B, building 5M sqft weapons factory', source: 'Anduril', type: 'headline' },
@@ -32,4 +32,11 @@ export const headlines: Headline[] = [
   { text: 'Apple commits $500B to US investment over 4 years with 20K new jobs', source: 'Apple', type: 'headline' },
   { text: 'SoftBank pledges $100B US investment, promising 100,000 jobs', source: 'SoftBank', type: 'headline' },
   { text: 'CHIPS Act drives 500,000 jobs across 28 states', source: 'NIST', type: 'headline' },
+
+  // Week of Apr 28 – May 4, 2026
+  { text: '"65% of Snap\'s code is now AI-generated — teams can accomplish more with fewer people." — Evan Spiegel, Snap CEO', source: 'TechCrunch', type: 'quote' },
+  { text: 'OpenAI plans to nearly double headcount to 8,000 by end of 2026 amid $24B+ annualized revenue', source: 'Financial Times', type: 'headline' },
+  { text: 'Meta + Microsoft announce 17,000+ job cuts in same week; both cite AI investments requiring efficiency gains', source: 'CNBC', type: 'headline' },
+  { text: '113,000+ tech workers laid off in 2026 through early May; ~50% AI-attributed — fastest pace since 2023', source: 'layoffs.fyi', type: 'stat' },
+  { text: 'AI company headcount growing 92% YoY vs. broad Big Tech cutting at largest firms', source: 'LinkedIn Labor Market Report', type: 'stat' },
 ];
