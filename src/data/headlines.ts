@@ -32,4 +32,10 @@ export const headlines: Headline[] = [
   { text: 'Apple commits $500B to US investment over 4 years with 20K new jobs', source: 'Apple', type: 'headline' },
   { text: 'SoftBank pledges $100B US investment, promising 100,000 jobs', source: 'SoftBank', type: 'headline' },
   { text: 'CHIPS Act drives 500,000 jobs across 28 states', source: 'NIST', type: 'headline' },
+
+  // Week of 2026-04-28
+  { text: '"We\'re hiring 1,000 new grads & interns right now to ride the AI exponential." — Marc Benioff, Salesforce', source: 'Salesforce', type: 'quote' },
+  { text: 'OpenAI plans to nearly double headcount to 8,000 employees by end of 2026', source: 'CNBC / Financial Times', type: 'headline' },
+  { text: 'SpaceX, Anduril & 10 others win $3.2B US Space Force Golden Dome interceptor contracts', source: 'US Space Force', type: 'headline' },
+  { text: 'Anduril\'s Arsenal-1 Ohio mega-factory kicks off Roadrunner production hiring; 4,000+ jobs pledged by 2035', source: 'Anduril', type: 'headline' },
 ];
