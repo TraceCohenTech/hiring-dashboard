@@ -39,4 +39,14 @@ export const headlines: Headline[] = [
   { text: 'Meta + Microsoft announce 17,000+ job cuts in same week; both cite AI investments requiring efficiency gains', source: 'CNBC', type: 'headline' },
   { text: '113,000+ tech workers laid off in 2026 through early May; ~50% AI-attributed — fastest pace since 2023', source: 'layoffs.fyi', type: 'stat' },
   { text: 'AI company headcount growing 92% YoY vs. broad Big Tech cutting at largest firms', source: 'LinkedIn Labor Market Report', type: 'stat' },
+
+  // Week of May 5–11, 2026
+  { text: '"This isn\'t a cost-cutting exercise — it\'s about defining how a world-class company operates in the agentic AI era." — Matthew Prince, Cloudflare CEO', source: 'TechCrunch', type: 'quote' },
+  { text: '"We\'re building AI-native pods — even one-person teams directing fleets of agents that cover engineering, design, and PM." — Brian Armstrong, Coinbase CEO', source: 'Fortune', type: 'quote' },
+  { text: '"PayPal is becoming a technology company again — we are aggressively adopting AI." — Enrique Lores, PayPal CEO', source: 'TechCrunch', type: 'quote' },
+  { text: '"Over half of our code is now written by AI." — Dennis Woodside, Freshworks CEO', source: 'Storyboard18', type: 'quote' },
+  { text: 'Cloudflare cut 1,100 jobs (20%) despite record $639.8M Q1 revenue — first layoff in company\'s 16-year history', source: 'CNBC', type: 'headline' },
+  { text: 'Coinbase, Freshworks & PayPal announced ~5,960 combined job cuts in first week of May 2026', source: 'TechRadar', type: 'headline' },
+  { text: 'Accenture surpasses 85,000 AI professionals, reaching 786K total — exceeded its own 80K target ahead of schedule', source: 'Infotechlead', type: 'headline' },
+  { text: '38,000+ US tech workers laid off in first 10 days of May 2026', source: 'layoffs.fyi', type: 'stat' },
 ];

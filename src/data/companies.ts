@@ -81,7 +81,7 @@ export const companies: HiringEntry[] = [
   { company: 'Wiz', sector: 'Cybersecurity', previousCount: 900, currentCount: 3100, netAdded: 2200, growthPercent: 244, aiRelated: true, description: 'Cloud security; fastest to $100M ARR; Google acquisition target' },
   { company: 'CrowdStrike', sector: 'Cybersecurity', previousCount: 7925, currentCount: 10118, netAdded: 2193, growthPercent: 28, aiRelated: true, description: 'Endpoint security leader scaling AI-native platform' },
   { company: 'Zscaler', sector: 'Cybersecurity', previousCount: 6900, currentCount: 8200, netAdded: 1300, growthPercent: 19, aiRelated: true, description: 'Zero-trust cloud security scaling headcount' },
-  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 3217, currentCount: 4263, netAdded: 1046, growthPercent: 33, aiRelated: true, description: 'Internet infrastructure and security platform' },
+  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 5500, currentCount: 4400, netAdded: -1100, growthPercent: -20, aiRelated: true, description: 'Cut 1,100 (20%) May 2026 in agentic AI pivot; CEO Prince: AI usage up 600% in 3 months; record $639.8M Q1 revenue; first layoff in 16-year history' },
   { company: 'Palo Alto Networks', sector: 'Cybersecurity', previousCount: 15200, currentCount: 16000, netAdded: 800, growthPercent: 5, aiRelated: true, description: 'Enterprise security giant in steady growth mode' },
   { company: 'Abnormal Security', sector: 'Cybersecurity', previousCount: 800, currentCount: 1350, netAdded: 550, growthPercent: 69, aiRelated: true, description: 'AI-native email security; behavioral AI threat detection' },
   { company: 'SentinelOne', sector: 'Cybersecurity', previousCount: 2300, currentCount: 2800, netAdded: 500, growthPercent: 22, aiRelated: true, description: 'AI-powered autonomous endpoint security' },
@@ -144,12 +144,14 @@ export const companies: HiringEntry[] = [
   { company: 'Duolingo', sector: 'SaaS/Enterprise', previousCount: 700, currentCount: 1000, netAdded: 300, growthPercent: 43, aiRelated: true, description: 'Language learning app; AI-powered lessons; 100M+ monthly users' },
   { company: 'Retool', sector: 'SaaS/Enterprise', previousCount: 400, currentCount: 650, netAdded: 250, growthPercent: 63, aiRelated: true, description: 'Internal tool builder; AI-powered app generation' },
   { company: 'Vercel', sector: 'SaaS/Enterprise', previousCount: 600, currentCount: 823, netAdded: 223, growthPercent: 37, aiRelated: true, description: 'Frontend cloud platform (Next.js); AI SDK; v0 AI product' },
+  { company: 'Freshworks', sector: 'SaaS/Enterprise', previousCount: 4500, currentCount: 4000, netAdded: -500, growthPercent: -11, aiRelated: true, description: 'Cut 500 (11%) May 2026; CEO Woodside: "over half of code written by AI"; $228.6M Q1 revenue (+16% YoY); 2nd AI-driven round since Nov 2024' },
 
   // ============================================================
-  // Fintech (6 companies)
+  // Fintech (7 companies)
   // ============================================================
-  { company: 'Block (Square)', sector: 'Fintech', previousCount: 12000, currentCount: 14000, netAdded: 2000, growthPercent: 17, aiRelated: true, description: 'Square + Cash App; Bitcoin; AI-powered seller tools' },
-  { company: 'Coinbase', sector: 'Fintech', previousCount: 3486, currentCount: 4700, netAdded: 1214, growthPercent: 35, aiRelated: true, description: 'Crypto exchange; post-crypto-winter recovery; regulatory wins' },
+  { company: 'Block (Square)', sector: 'Fintech', previousCount: 10000, currentCount: 6000, netAdded: -4000, growthPercent: -40, aiRelated: true, description: 'Cut 40% (~4,000 jobs) early 2026; Jack Dorsey: AI enables operating with fewer; Square + Cash App restructuring for AI era' },
+  { company: 'Coinbase', sector: 'Fintech', previousCount: 5000, currentCount: 4300, netAdded: -700, growthPercent: -14, aiRelated: true, description: 'Cut 700 (14%) May 2026; CEO Armstrong building "AI-native pods"; max 5 mgmt layers; player-coach model; crypto AI pivot' },
+  { company: 'PayPal', sector: 'Fintech', previousCount: 27200, currentCount: 23800, netAdded: -3400, growthPercent: -13, aiRelated: true, description: 'New CEO Enrique Lores (ex-HP) since Mar 2026; planning 4,760 more cuts (20%) over 2-3 yrs; "becoming a technology company again"; $1.5B annualized savings target' },
   { company: 'Chime', sector: 'Fintech', previousCount: 1465, currentCount: 2347, netAdded: 882, growthPercent: 60, aiRelated: false, description: 'Largest US neobank by users; IPO preparation' },
   { company: 'Ramp', sector: 'Fintech', previousCount: 730, currentCount: 1200, netAdded: 470, growthPercent: 64, aiRelated: true, description: 'AI-powered corporate cards/expense management; $13B valuation' },
   { company: 'Mercury', sector: 'Fintech', previousCount: 500, currentCount: 850, netAdded: 350, growthPercent: 70, aiRelated: true, description: 'Banking for startups; AI-powered financial tools; $500M+ deposits' },
@@ -177,7 +179,7 @@ export const companies: HiringEntry[] = [
   // ============================================================
   // Consulting (1 company)
   // ============================================================
-  { company: 'Accenture', sector: 'Consulting', previousCount: 733000, currentCount: 779000, netAdded: 46000, growthPercent: 6, aiRelated: true, description: 'Doubling AI workforce to 80K specialists; $3B AI investment' },
+  { company: 'Accenture', sector: 'Consulting', previousCount: 733000, currentCount: 786432, netAdded: 53432, growthPercent: 7, aiRelated: true, description: 'Added 7,000+ in H1 FY2026; 786K total; 85K+ AI professionals (exceeded 80K target); $3B AI investment' },
 
   // ============================================================
   // Other Notable (10 companies)
