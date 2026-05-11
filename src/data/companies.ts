@@ -81,7 +81,7 @@ export const companies: HiringEntry[] = [
   { company: 'Wiz', sector: 'Cybersecurity', previousCount: 900, currentCount: 3100, netAdded: 2200, growthPercent: 244, aiRelated: true, description: 'Cloud security; fastest to $100M ARR; Google acquisition target' },
   { company: 'CrowdStrike', sector: 'Cybersecurity', previousCount: 7925, currentCount: 10118, netAdded: 2193, growthPercent: 28, aiRelated: true, description: 'Endpoint security leader scaling AI-native platform' },
   { company: 'Zscaler', sector: 'Cybersecurity', previousCount: 6900, currentCount: 8200, netAdded: 1300, growthPercent: 19, aiRelated: true, description: 'Zero-trust cloud security scaling headcount' },
-  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 3217, currentCount: 4263, netAdded: 1046, growthPercent: 33, aiRelated: true, description: 'Internet infrastructure and security platform' },
+  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 5156, currentCount: 4056, netAdded: -1100, growthPercent: -21, aiRelated: true, description: 'Cut 1,100 (20%) May 7, 2026 in agentic AI pivot; CEO cites 600% AI usage growth in 3 months' },
   { company: 'Palo Alto Networks', sector: 'Cybersecurity', previousCount: 15200, currentCount: 16000, netAdded: 800, growthPercent: 5, aiRelated: true, description: 'Enterprise security giant in steady growth mode' },
   { company: 'Abnormal Security', sector: 'Cybersecurity', previousCount: 800, currentCount: 1350, netAdded: 550, growthPercent: 69, aiRelated: true, description: 'AI-native email security; behavioral AI threat detection' },
   { company: 'SentinelOne', sector: 'Cybersecurity', previousCount: 2300, currentCount: 2800, netAdded: 500, growthPercent: 22, aiRelated: true, description: 'AI-powered autonomous endpoint security' },
@@ -148,12 +148,13 @@ export const companies: HiringEntry[] = [
   // ============================================================
   // Fintech (6 companies)
   // ============================================================
-  { company: 'Block (Square)', sector: 'Fintech', previousCount: 12000, currentCount: 14000, netAdded: 2000, growthPercent: 17, aiRelated: true, description: 'Square + Cash App; Bitcoin; AI-powered seller tools' },
-  { company: 'Coinbase', sector: 'Fintech', previousCount: 3486, currentCount: 4700, netAdded: 1214, growthPercent: 35, aiRelated: true, description: 'Crypto exchange; post-crypto-winter recovery; regulatory wins' },
+  { company: 'Block (Square)', sector: 'Fintech', previousCount: 10000, currentCount: 6000, netAdded: -4000, growthPercent: -40, aiRelated: true, description: 'Cut 4,000 (40%) Feb 2026; CEO Jack Dorsey: "Most companies will reach the same conclusion and make similar structural changes"' },
+  { company: 'Coinbase', sector: 'Fintech', previousCount: 5000, currentCount: 4300, netAdded: -700, growthPercent: -14, aiRelated: true, description: 'Cut 700 (14%) May 5, 2026; CEO Armstrong rebuilding as "AI-native" company with one-person teams' },
   { company: 'Chime', sector: 'Fintech', previousCount: 1465, currentCount: 2347, netAdded: 882, growthPercent: 60, aiRelated: false, description: 'Largest US neobank by users; IPO preparation' },
   { company: 'Ramp', sector: 'Fintech', previousCount: 730, currentCount: 1200, netAdded: 470, growthPercent: 64, aiRelated: true, description: 'AI-powered corporate cards/expense management; $13B valuation' },
   { company: 'Mercury', sector: 'Fintech', previousCount: 500, currentCount: 850, netAdded: 350, growthPercent: 70, aiRelated: true, description: 'Banking for startups; AI-powered financial tools; $500M+ deposits' },
   { company: 'Plaid', sector: 'Fintech', previousCount: 950, currentCount: 1100, netAdded: 150, growthPercent: 16, aiRelated: false, description: 'Financial data API connecting banks to fintech apps' },
+  { company: 'PayPal', sector: 'Fintech', previousCount: 23800, currentCount: 19040, netAdded: -4760, growthPercent: -20, aiRelated: true, description: 'Cut 4,760 (20%) May 5, 2026; new CEO Lores: "PayPal is becoming a technology company again" targeting $1.5B in AI-driven savings' },
 
   // ============================================================
   // Robotics / Autonomy (7 companies)
