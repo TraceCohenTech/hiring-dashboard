@@ -58,9 +58,11 @@ export const companies: HiringEntry[] = [
   { company: 'Instacart', sector: 'Big Tech', previousCount: 2800, currentCount: 3500, netAdded: 700, growthPercent: 25, aiRelated: true, description: 'Grocery delivery platform; AI-powered shopping; post-IPO growth' },
   { company: 'Pinterest', sector: 'Big Tech', previousCount: 3900, currentCount: 4400, netAdded: 500, growthPercent: 13, aiRelated: true, description: 'Visual discovery; AI-powered shopping; $3.6B revenue' },
   { company: 'Snap', sector: 'Big Tech', previousCount: 5800, currentCount: 4261, netAdded: -1539, growthPercent: -26, aiRelated: true, description: 'Cut 1,000 employees (16%) Apr 2026; CEO cites 65% of code now AI-generated; $500M annualized cost reduction' },
+  { company: 'LinkedIn', sector: 'Big Tech', previousCount: 17500, currentCount: 16625, netAdded: -875, growthPercent: -5, aiRelated: false, description: 'Cut 875 jobs (5%) May 2026 despite record $5B+ quarterly revenue; efficiency restructuring; AI not cited as reason; Graz office closed' },
+  { company: 'Cisco', sector: 'Big Tech', previousCount: 80000, currentCount: 76000, netAdded: -4000, growthPercent: -5, aiRelated: true, description: 'Cut 4,000 jobs (5%) May 2026 on same day as record $15.8B revenue; $5.3B AI orders from hyperscalers; third major restructuring in two years' },
 
   // ============================================================
-  // Defense Tech (12 companies)
+  // Defense Tech (13 companies)
   // ============================================================
   { company: 'SpaceX', sector: 'Defense Tech', previousCount: 12000, currentCount: 17800, netAdded: 5800, growthPercent: 48, aiRelated: true, description: 'Starlink and Starship driving massive hiring' },
   { company: 'Northrop Grumman', sector: 'Defense Tech', previousCount: 95000, currentCount: 101000, netAdded: 6000, growthPercent: 6, aiRelated: true, description: 'B-21 bomber, autonomous systems, space defense' },
@@ -74,6 +76,7 @@ export const companies: HiringEntry[] = [
   { company: 'Shield AI', sector: 'Defense Tech', previousCount: 290, currentCount: 1200, netAdded: 910, growthPercent: 314, aiRelated: true, description: 'Autonomous drone maker with Hivemind AI pilot' },
   { company: 'Palantir', sector: 'Defense Tech', previousCount: 3892, currentCount: 4414, netAdded: 522, growthPercent: 13, aiRelated: true, description: 'AI defense platform expanding government contracts' },
   { company: 'Skydio', sector: 'Defense Tech', previousCount: 500, currentCount: 874, netAdded: 374, growthPercent: 75, aiRelated: true, description: 'Autonomous US-made drones; AI-powered flight; DoD contracts' },
+  { company: 'True Anomaly', sector: 'Defense Tech', previousCount: 100, currentCount: 250, netAdded: 150, growthPercent: 150, aiRelated: true, description: 'Space defense startup; $650M Series D at $2.2B valuation Apr 2026; targeting 500+ employees by year-end; Golden Dome interceptor program' },
 
   // ============================================================
   // Cybersecurity (10 companies)
@@ -81,7 +84,7 @@ export const companies: HiringEntry[] = [
   { company: 'Wiz', sector: 'Cybersecurity', previousCount: 900, currentCount: 3100, netAdded: 2200, growthPercent: 244, aiRelated: true, description: 'Cloud security; fastest to $100M ARR; Google acquisition target' },
   { company: 'CrowdStrike', sector: 'Cybersecurity', previousCount: 7925, currentCount: 10118, netAdded: 2193, growthPercent: 28, aiRelated: true, description: 'Endpoint security leader scaling AI-native platform' },
   { company: 'Zscaler', sector: 'Cybersecurity', previousCount: 6900, currentCount: 8200, netAdded: 1300, growthPercent: 19, aiRelated: true, description: 'Zero-trust cloud security scaling headcount' },
-  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 3217, currentCount: 4263, netAdded: 1046, growthPercent: 33, aiRelated: true, description: 'Internet infrastructure and security platform' },
+  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 5500, currentCount: 4400, netAdded: -1100, growthPercent: -20, aiRelated: true, description: 'Cut 1,100 jobs (20%) May 2026; CEO Prince: "AI usage up 600% in 3 months"; pivoting to agentic AI infrastructure; first layoff in 16-year history' },
   { company: 'Palo Alto Networks', sector: 'Cybersecurity', previousCount: 15200, currentCount: 16000, netAdded: 800, growthPercent: 5, aiRelated: true, description: 'Enterprise security giant in steady growth mode' },
   { company: 'Abnormal Security', sector: 'Cybersecurity', previousCount: 800, currentCount: 1350, netAdded: 550, growthPercent: 69, aiRelated: true, description: 'AI-native email security; behavioral AI threat detection' },
   { company: 'SentinelOne', sector: 'Cybersecurity', previousCount: 2300, currentCount: 2800, netAdded: 500, growthPercent: 22, aiRelated: true, description: 'AI-powered autonomous endpoint security' },
@@ -121,7 +124,7 @@ export const companies: HiringEntry[] = [
   { company: 'Digital Realty', sector: 'Infrastructure', previousCount: 3664, currentCount: 3936, netAdded: 272, growthPercent: 7, aiRelated: true, description: 'Data center REIT; AI-driven demand; colocation services' },
 
   // ============================================================
-  // SaaS / Enterprise (22 companies)
+  // SaaS / Enterprise (23 companies)
   // ============================================================
   { company: 'Rippling', sector: 'SaaS/Enterprise', previousCount: 2800, currentCount: 6772, netAdded: 3972, growthPercent: 142, aiRelated: true, description: 'HR/IT/finance platform; AI-powered workforce management; $570M ARR' },
   { company: 'Datadog', sector: 'SaaS/Enterprise', previousCount: 5200, currentCount: 8100, netAdded: 2900, growthPercent: 56, aiRelated: true, description: 'Cloud monitoring/observability; AI-powered analytics' },
@@ -144,22 +147,24 @@ export const companies: HiringEntry[] = [
   { company: 'Duolingo', sector: 'SaaS/Enterprise', previousCount: 700, currentCount: 1000, netAdded: 300, growthPercent: 43, aiRelated: true, description: 'Language learning app; AI-powered lessons; 100M+ monthly users' },
   { company: 'Retool', sector: 'SaaS/Enterprise', previousCount: 400, currentCount: 650, netAdded: 250, growthPercent: 63, aiRelated: true, description: 'Internal tool builder; AI-powered app generation' },
   { company: 'Vercel', sector: 'SaaS/Enterprise', previousCount: 600, currentCount: 823, netAdded: 223, growthPercent: 37, aiRelated: true, description: 'Frontend cloud platform (Next.js); AI SDK; v0 AI product' },
+  { company: 'Freshworks', sector: 'SaaS/Enterprise', previousCount: 4500, currentCount: 4000, netAdded: -500, growthPercent: -11, aiRelated: true, description: 'Cut 500 (11%) May 2026; CEO Woodside: "over half of code written by AI"; $228.6M Q1 revenue (+16% YoY); second AI-driven cut since Nov 2024' },
 
   // ============================================================
-  // Fintech (6 companies)
+  // Fintech (7 companies)
   // ============================================================
-  { company: 'Block (Square)', sector: 'Fintech', previousCount: 12000, currentCount: 14000, netAdded: 2000, growthPercent: 17, aiRelated: true, description: 'Square + Cash App; Bitcoin; AI-powered seller tools' },
-  { company: 'Coinbase', sector: 'Fintech', previousCount: 3486, currentCount: 4700, netAdded: 1214, growthPercent: 35, aiRelated: true, description: 'Crypto exchange; post-crypto-winter recovery; regulatory wins' },
+  { company: 'Block (Square)', sector: 'Fintech', previousCount: 10000, currentCount: 6000, netAdded: -4000, growthPercent: -40, aiRelated: true, description: 'Cut 40% (~4,000 jobs) early 2026; Jack Dorsey: AI enables operating with fewer; Square + Cash App restructuring for AI era' },
+  { company: 'Coinbase', sector: 'Fintech', previousCount: 4700, currentCount: 4000, netAdded: -700, growthPercent: -15, aiRelated: true, description: 'Cut 700 jobs (14%) May 2026 in AI-native restructuring; CEO Armstrong building one-person teams and "fleets of agents"' },
   { company: 'Chime', sector: 'Fintech', previousCount: 1465, currentCount: 2347, netAdded: 882, growthPercent: 60, aiRelated: false, description: 'Largest US neobank by users; IPO preparation' },
   { company: 'Ramp', sector: 'Fintech', previousCount: 730, currentCount: 1200, netAdded: 470, growthPercent: 64, aiRelated: true, description: 'AI-powered corporate cards/expense management; $13B valuation' },
   { company: 'Mercury', sector: 'Fintech', previousCount: 500, currentCount: 850, netAdded: 350, growthPercent: 70, aiRelated: true, description: 'Banking for startups; AI-powered financial tools; $500M+ deposits' },
   { company: 'Plaid', sector: 'Fintech', previousCount: 950, currentCount: 1100, netAdded: 150, growthPercent: 16, aiRelated: false, description: 'Financial data API connecting banks to fintech apps' },
+  { company: 'PayPal', sector: 'Fintech', previousCount: 23800, currentCount: 19040, netAdded: -4760, growthPercent: -20, aiRelated: true, description: 'Plans 4,760 cuts (20%) over 2-3 years under CEO Alex Chriss; $1.5B run-rate savings target; "becoming a technology company again through AI"' },
 
   // ============================================================
   // Robotics / Autonomy (7 companies)
   // ============================================================
   { company: 'Zipline', sector: 'Robotics', previousCount: 1500, currentCount: 2800, netAdded: 1300, growthPercent: 87, aiRelated: true, description: 'Autonomous drone delivery; 1B+ deliveries; expanding globally' },
-  { company: 'Waymo', sector: 'Robotics', previousCount: 1200, currentCount: 2500, netAdded: 1300, growthPercent: 108, aiRelated: true, description: 'Autonomous ride-hailing; expanded to 5+ US cities' },
+  { company: 'Waymo', sector: 'Robotics', previousCount: 1200, currentCount: 2500, netAdded: 1300, growthPercent: 108, aiRelated: true, description: '$16B raised at $126B valuation Feb 2026; expanded to 1,400+ sq miles across 11 US cities May 2026; $350M+ ARR; 15M trips in 2025' },
   { company: 'WeRide', sector: 'Robotics', previousCount: 800, currentCount: 1300, netAdded: 500, growthPercent: 63, aiRelated: true, description: 'Autonomous driving; first NASDAQ IPO for Chinese robotaxi company' },
   { company: 'Applied Intuition', sector: 'Robotics', previousCount: 800, currentCount: 1273, netAdded: 473, growthPercent: 59, aiRelated: true, description: 'Autonomous vehicle simulation/infra; $6B valuation' },
   { company: 'Boston Dynamics', sector: 'Robotics', previousCount: 1000, currentCount: 1423, netAdded: 423, growthPercent: 42, aiRelated: true, description: 'Spot, Atlas, Stretch robots; warehouse automation' },
@@ -177,7 +182,7 @@ export const companies: HiringEntry[] = [
   // ============================================================
   // Consulting (1 company)
   // ============================================================
-  { company: 'Accenture', sector: 'Consulting', previousCount: 733000, currentCount: 779000, netAdded: 46000, growthPercent: 6, aiRelated: true, description: 'Doubling AI workforce to 80K specialists; $3B AI investment' },
+  { company: 'Accenture', sector: 'Consulting', previousCount: 733000, currentCount: 786432, netAdded: 53432, growthPercent: 7, aiRelated: true, description: 'Added 7,000+ in H1 FY2026; 786K total; 85K+ AI professionals (exceeded 80K target ahead of schedule); $3B AI investment' },
 
   // ============================================================
   // Other Notable (10 companies)
