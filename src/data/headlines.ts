@@ -39,4 +39,11 @@ export const headlines: Headline[] = [
   { text: 'Meta + Microsoft announce 17,000+ job cuts in same week; both cite AI investments requiring efficiency gains', source: 'CNBC', type: 'headline' },
   { text: '113,000+ tech workers laid off in 2026 through early May; ~50% AI-attributed — fastest pace since 2023', source: 'layoffs.fyi', type: 'stat' },
   { text: 'AI company headcount growing 92% YoY vs. broad Big Tech cutting at largest firms', source: 'LinkedIn Labor Market Report', type: 'stat' },
+
+  // Week of May 11–18, 2026
+  { text: '"While we are reducing roles, we are investing in AI capabilities that will drive the next phase of growth." — Chuck Robbins, Cisco CEO', source: 'TechCrunch', type: 'quote' },
+  { text: '"We\'re becoming a technology company again — and that means AI at the core of everything we do." — Alex Chriss, PayPal CEO', source: 'TechCrunch', type: 'quote' },
+  { text: 'Cisco cuts 4,000 jobs on same day as record $15.8B revenue — AI pivot drives third major restructuring in two years', source: 'TechCrunch', type: 'headline' },
+  { text: 'LinkedIn cuts 875 jobs (5%) despite record $5B quarterly revenue — one of few major 2026 tech cuts NOT attributed to AI', source: 'GeekWire', type: 'headline' },
+  { text: '136,000+ tech workers laid off in 2026 through mid-May — 321 events averaging 1,004 job losses per day', source: 'TrueUp', type: 'stat' },
 ];
