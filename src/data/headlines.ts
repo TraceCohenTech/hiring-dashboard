@@ -39,4 +39,11 @@ export const headlines: Headline[] = [
   { text: 'Meta + Microsoft announce 17,000+ job cuts in same week; both cite AI investments requiring efficiency gains', source: 'CNBC', type: 'headline' },
   { text: '113,000+ tech workers laid off in 2026 through early May; ~50% AI-attributed — fastest pace since 2023', source: 'layoffs.fyi', type: 'stat' },
   { text: 'AI company headcount growing 92% YoY vs. broad Big Tech cutting at largest firms', source: 'LinkedIn Labor Market Report', type: 'stat' },
+
+  // Week of May 18–25, 2026
+  { text: '"We are architecting an organization that operates with greater velocity — reallocating capital to AI partnerships with Anthropic and OpenAI." — Sasan Goodarzi, Intuit CEO', source: 'TechCrunch', type: 'quote' },
+  { text: 'Intuit signs multi-year AI deals with Anthropic and OpenAI the same day it cuts 3,000 jobs (17%)', source: 'HCA Magazine', type: 'headline' },
+  { text: 'Standard Chartered to eliminate 7,800 support roles by 2030 as AI replaces HR, risk, and compliance functions', source: 'CNBC', type: 'headline' },
+  { text: '134,600+ tech workers laid off across 212 events in 2026 as of May 24 — nearly 1,000 per day', source: 'TrueUp', type: 'stat' },
+  { text: 'AI Engineer ranks #1 fastest-growing US job title for the 3rd consecutive year — postings up 143% YoY', source: 'LinkedIn Jobs on the Rise', type: 'stat' },
 ];
