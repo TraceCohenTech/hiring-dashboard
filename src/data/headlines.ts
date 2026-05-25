@@ -39,4 +39,35 @@ export const headlines: Headline[] = [
   { text: 'Meta + Microsoft announce 17,000+ job cuts in same week; both cite AI investments requiring efficiency gains', source: 'CNBC', type: 'headline' },
   { text: '113,000+ tech workers laid off in 2026 through early May; ~50% AI-attributed — fastest pace since 2023', source: 'layoffs.fyi', type: 'stat' },
   { text: 'AI company headcount growing 92% YoY vs. broad Big Tech cutting at largest firms', source: 'LinkedIn Labor Market Report', type: 'stat' },
+
+  // Week of May 5–11, 2026
+  { text: '"This isn\'t a cost-cutting exercise — it\'s about defining how a world-class company operates in the agentic AI era." — Matthew Prince, Cloudflare CEO', source: 'TechCrunch', type: 'quote' },
+  { text: '"We\'re building AI-native pods — even one-person teams directing fleets of agents that cover engineering, design, and PM." — Brian Armstrong, Coinbase CEO', source: 'Fortune', type: 'quote' },
+  { text: '"PayPal is becoming a technology company again — we are aggressively adopting AI." — Alex Chriss, PayPal CEO', source: 'TechCrunch', type: 'quote' },
+  { text: '"Over half of our code is now written by AI." — Dennis Woodside, Freshworks CEO', source: 'Storyboard18', type: 'quote' },
+  { text: 'Cloudflare cut 1,100 jobs (20%) despite record $639.8M Q1 revenue — first layoff in company\'s 16-year history', source: 'CNBC', type: 'headline' },
+  { text: 'Coinbase, Freshworks & PayPal announced ~5,960 combined job cuts in first week of May 2026', source: 'TechRadar', type: 'headline' },
+  { text: 'Accenture surpasses 85,000 AI professionals, reaching 786K total — exceeded its own 80K target ahead of schedule', source: 'Infotechlead', type: 'headline' },
+  { text: '38,000+ US tech workers laid off in first 10 days of May 2026', source: 'layoffs.fyi', type: 'stat' },
+
+  // Week of May 11–18, 2026
+  { text: '"While we are reducing roles, we are investing in AI capabilities that will drive the next phase of growth." — Chuck Robbins, Cisco CEO', source: 'TechCrunch', type: 'quote' },
+  { text: 'Cisco cuts 4,000 jobs (5%) on same day as record $15.8B quarterly revenue — third major restructuring in two years driven by AI pivot', source: 'TechCrunch', type: 'headline' },
+  { text: 'LinkedIn cuts 875 jobs (5%) despite record $5B+ quarterly revenue — one of few major 2026 tech layoffs NOT attributed to AI', source: 'GeekWire', type: 'headline' },
+  { text: 'Waymo expands to 1,400+ square miles across 11 US cities — backed by $16B raise at $126B valuation and $350M+ ARR', source: 'Electrek', type: 'headline' },
+  { text: 'True Anomaly raises $650M Series D at $2.2B valuation; plans to double headcount to 500+ for Pentagon Golden Dome program', source: 'Bloomberg', type: 'headline' },
+  { text: 'John Ternus named Apple CEO successor (Sept 1, 2026); Tim Cook becomes executive chairman after 15 years at helm', source: 'Apple Newsroom', type: 'headline' },
+  { text: '136,000+ tech workers laid off in 2026 through mid-May — 321 events averaging 1,004 job losses per day', source: 'TrueUp', type: 'stat' },
+  { text: 'Big Tech ($725B combined 2026 capex) directing spending almost entirely into compute, not payroll', source: '247wallst / Bloomberg', type: 'stat' },
+
+  // Week of May 18–25, 2026
+  { text: '"We are architecting an organization that operates with greater velocity — reallocating capital to AI partnerships with Anthropic and OpenAI." — Sasan Goodarzi, Intuit CEO', source: 'TechCrunch', type: 'quote' },
+  { text: 'Intuit signs multi-year AI deals with Anthropic and OpenAI the same day it cuts 3,000 jobs (17%)', source: 'HCA Magazine', type: 'headline' },
+  { text: 'Meta executed 8,000 layoffs on May 20 — largest single-day tech job cut event of 2026; also cancelled 6,000 open roles and redirected 7,000 workers into AI pods', source: 'The Next Web', type: 'headline' },
+  { text: 'Standard Chartered to eliminate 7,800 support roles by 2030 as AI replaces HR, risk, and compliance functions', source: 'CNBC', type: 'headline' },
+  { text: 'Sierra raises $950M at $15.8B valuation — Bret Taylor\'s enterprise AI agent company counts 40%+ of Fortune 50 as customers', source: 'TechCrunch', type: 'headline' },
+  { text: 'Anthropic poaches Microsoft Azure AI President Eric Boyd as head of infrastructure to scale Claude\'s rapidly growing model capacity', source: 'Bloomberg', type: 'headline' },
+  { text: '134,600+ tech workers laid off across 212 events in 2026 as of May 24 — nearly 1,000 per day', source: 'TrueUp', type: 'stat' },
+  { text: 'AI Engineer ranks #1 fastest-growing US job title for the 3rd consecutive year — postings up 143% YoY', source: 'LinkedIn Jobs on the Rise', type: 'stat' },
+  { text: '59% of firms with strategic AI integration reported growth in entry-level hiring in 2026 — AI-enabled companies growing headcount, not cutting it', source: 'CBS News', type: 'stat' },
 ];
