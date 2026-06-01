@@ -58,6 +58,8 @@ export const companies: HiringEntry[] = [
   { company: 'Instacart', sector: 'Big Tech', previousCount: 2800, currentCount: 3500, netAdded: 700, growthPercent: 25, aiRelated: true, description: 'Grocery delivery platform; AI-powered shopping; post-IPO growth' },
   { company: 'Pinterest', sector: 'Big Tech', previousCount: 3900, currentCount: 4400, netAdded: 500, growthPercent: 13, aiRelated: true, description: 'Visual discovery; AI-powered shopping; $3.6B revenue' },
   { company: 'Snap', sector: 'Big Tech', previousCount: 5800, currentCount: 4261, netAdded: -1539, growthPercent: -26, aiRelated: true, description: 'Cut 1,000 employees (16%) Apr 2026; CEO cites 65% of code now AI-generated; $500M annualized cost reduction' },
+  { company: 'LinkedIn', sector: 'Big Tech', previousCount: 17500, currentCount: 16625, netAdded: -875, growthPercent: -5, aiRelated: false, description: 'Cut 875 (5%) May 2026 — new CEO Dan Shapero\'s first major move; reorganizing around growth areas despite record $5B+ quarterly revenue' },
+  { company: 'Cisco', sector: 'Big Tech', previousCount: 85000, currentCount: 81000, netAdded: -4000, growthPercent: -5, aiRelated: true, description: 'Cut 4,000 (~5%) May 2026 to realign around silicon optics, AI, and security; posted record Q3 revenue of $15.8B' },
 
   // ============================================================
   // Defense Tech (12 companies)
@@ -81,10 +83,10 @@ export const companies: HiringEntry[] = [
   { company: 'Wiz', sector: 'Cybersecurity', previousCount: 900, currentCount: 3100, netAdded: 2200, growthPercent: 244, aiRelated: true, description: 'Cloud security; fastest to $100M ARR; Google acquisition target' },
   { company: 'CrowdStrike', sector: 'Cybersecurity', previousCount: 7925, currentCount: 10118, netAdded: 2193, growthPercent: 28, aiRelated: true, description: 'Endpoint security leader scaling AI-native platform' },
   { company: 'Zscaler', sector: 'Cybersecurity', previousCount: 6900, currentCount: 8200, netAdded: 1300, growthPercent: 19, aiRelated: true, description: 'Zero-trust cloud security scaling headcount' },
-  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 3217, currentCount: 4263, netAdded: 1046, growthPercent: 33, aiRelated: true, description: 'Internet infrastructure and security platform' },
+  { company: 'Cloudflare', sector: 'Cybersecurity', previousCount: 5500, currentCount: 4400, netAdded: -1100, growthPercent: -20, aiRelated: true, description: 'Cut 1,100 (20%) May 2026 — CEO cites "agentic AI era"; AI usage up 600% in 3 months; rebuilding as "maker" org' },
   { company: 'Palo Alto Networks', sector: 'Cybersecurity', previousCount: 15200, currentCount: 16000, netAdded: 800, growthPercent: 5, aiRelated: true, description: 'Enterprise security giant in steady growth mode' },
   { company: 'Abnormal Security', sector: 'Cybersecurity', previousCount: 800, currentCount: 1350, netAdded: 550, growthPercent: 69, aiRelated: true, description: 'AI-native email security; behavioral AI threat detection' },
-  { company: 'SentinelOne', sector: 'Cybersecurity', previousCount: 2300, currentCount: 2800, netAdded: 500, growthPercent: 22, aiRelated: true, description: 'AI-powered autonomous endpoint security' },
+  { company: 'SentinelOne', sector: 'Cybersecurity', previousCount: 2800, currentCount: 2570, netAdded: -230, growthPercent: -8, aiRelated: true, description: 'Cut 8% (230 jobs) May 28 2026 to fund AI security growth; 21% revenue growth; ARR $1.16B' },
   { company: 'Arctic Wolf', sector: 'Cybersecurity', previousCount: 1100, currentCount: 1437, netAdded: 337, growthPercent: 31, aiRelated: true, description: 'Managed detection and response; security operations cloud' },
   { company: 'Tanium', sector: 'Cybersecurity', previousCount: 2000, currentCount: 2294, netAdded: 294, growthPercent: 15, aiRelated: true, description: 'Endpoint management/security; real-time visibility; $700M revenue' },
   { company: 'Snyk', sector: 'Cybersecurity', previousCount: 1028, currentCount: 1220, netAdded: 192, growthPercent: 19, aiRelated: true, description: 'Developer security platform; code/container scanning' },
@@ -144,12 +146,14 @@ export const companies: HiringEntry[] = [
   { company: 'Duolingo', sector: 'SaaS/Enterprise', previousCount: 700, currentCount: 1000, netAdded: 300, growthPercent: 43, aiRelated: true, description: 'Language learning app; AI-powered lessons; 100M+ monthly users' },
   { company: 'Retool', sector: 'SaaS/Enterprise', previousCount: 400, currentCount: 650, netAdded: 250, growthPercent: 63, aiRelated: true, description: 'Internal tool builder; AI-powered app generation' },
   { company: 'Vercel', sector: 'SaaS/Enterprise', previousCount: 600, currentCount: 823, netAdded: 223, growthPercent: 37, aiRelated: true, description: 'Frontend cloud platform (Next.js); AI SDK; v0 AI product' },
+  { company: 'Intuit', sector: 'SaaS/Enterprise', previousCount: 18200, currentCount: 15200, netAdded: -3000, growthPercent: -17, aiRelated: true, description: 'Cut 3,000 (17%) May 2026 to fund AI; signed multi-year Anthropic + OpenAI deals embedding AI across TurboTax, QuickBooks, Credit Karma' },
+  { company: 'Wix', sector: 'SaaS/Enterprise', previousCount: 5277, currentCount: 4222, netAdded: -1055, growthPercent: -20, aiRelated: true, description: 'Cut ~1,000 (20%) May 2026 as CEO cites AI transformation and surging Israeli shekel squeezing margins; rebuilding around AI-native roles' },
 
   // ============================================================
   // Fintech (6 companies)
   // ============================================================
   { company: 'Block (Square)', sector: 'Fintech', previousCount: 12000, currentCount: 14000, netAdded: 2000, growthPercent: 17, aiRelated: true, description: 'Square + Cash App; Bitcoin; AI-powered seller tools' },
-  { company: 'Coinbase', sector: 'Fintech', previousCount: 3486, currentCount: 4700, netAdded: 1214, growthPercent: 35, aiRelated: true, description: 'Crypto exchange; post-crypto-winter recovery; regulatory wins' },
+  { company: 'Coinbase', sector: 'Fintech', previousCount: 5000, currentCount: 4300, netAdded: -700, growthPercent: -14, aiRelated: true, description: 'Cut 700 (14%) May 2026 for AI-native model; CEO experimenting with one-person teams and fleets of agents' },
   { company: 'Chime', sector: 'Fintech', previousCount: 1465, currentCount: 2347, netAdded: 882, growthPercent: 60, aiRelated: false, description: 'Largest US neobank by users; IPO preparation' },
   { company: 'Ramp', sector: 'Fintech', previousCount: 730, currentCount: 1200, netAdded: 470, growthPercent: 64, aiRelated: true, description: 'AI-powered corporate cards/expense management; $13B valuation' },
   { company: 'Mercury', sector: 'Fintech', previousCount: 500, currentCount: 850, netAdded: 350, growthPercent: 70, aiRelated: true, description: 'Banking for startups; AI-powered financial tools; $500M+ deposits' },

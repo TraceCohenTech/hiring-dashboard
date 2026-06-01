@@ -39,4 +39,12 @@ export const headlines: Headline[] = [
   { text: 'Meta + Microsoft announce 17,000+ job cuts in same week; both cite AI investments requiring efficiency gains', source: 'CNBC', type: 'headline' },
   { text: '113,000+ tech workers laid off in 2026 through early May; ~50% AI-attributed — fastest pace since 2023', source: 'layoffs.fyi', type: 'stat' },
   { text: 'AI company headcount growing 92% YoY vs. broad Big Tech cutting at largest firms', source: 'LinkedIn Labor Market Report', type: 'stat' },
+
+  // Week of May 26 – June 1, 2026
+  { text: '"The companies that win in the AI era will have focus, urgency, and the discipline to continuously shift investment toward long-term value creation." — Chuck Robbins, Cisco CEO', source: 'TheStreet', type: 'quote' },
+  { text: '"Today we are restructuring Rapyd to align with a fundamental shift: Rapyd is now a company operated by AI." — Arik Shtilman, Rapyd CEO', source: 'Ctech', type: 'quote' },
+  { text: '"This is not a reactive measure — it is a deliberate evolution to reduce complexity, raise the performance bar, and build a leaner SentinelOne." — Tomer Weingarten, SentinelOne CEO', source: 'CNBC', type: 'quote' },
+  { text: '142,000+ tech workers laid off in 2026 by late May; profitable companies redirecting payroll savings to $700B AI capex', source: 'TechTimes / TrueUp', type: 'stat' },
+  { text: 'Israeli "Black Thursday" (May 28): Wix, Amdocs, SentinelOne, and Rapyd all announce major cuts on same day', source: 'Times of Israel / Ctech', type: 'headline' },
+  { text: 'Intuit cuts 3,000 (17%) and signs multi-year Anthropic + OpenAI deals to embed AI in TurboTax and QuickBooks', source: 'TechCrunch', type: 'headline' },
 ];
